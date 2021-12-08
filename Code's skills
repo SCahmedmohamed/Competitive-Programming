@@ -1,0 +1,5 @@
+By Ahmed Mohamed Ibrahim 
+
+1) How To Speed Boost ( Cout - Cin )
+    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    
