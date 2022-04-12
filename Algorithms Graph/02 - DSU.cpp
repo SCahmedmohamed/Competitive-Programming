@@ -10,20 +10,29 @@ const int N = 2e6 + 5;
 int n ,par[N], sz[N] , components;
 int find(int node){
     if(par[node] == node) {
+    // par == node ?
         return node;
     }
     return par[node] = find(par[node]);
+    // make the component under the par
 }
 void join(int u , int v){
     u = find(u);
     v = find(v);
     if(u == v) return;
+    
     if(sz[u] < sz[v]){
+     // i guess the component(v) > the component (u)
+     // to pinning the code 
         swap(u,v);
     }
         par[v] = u;
+        // make u is par for v
         sz[u] += sz[v];
+        // in this step we merge the components
         components--;
+        // after we merge the components the components get lower
+        // 2 components = 1 component
 }
 int main(){
     Scorpion
