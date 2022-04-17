@@ -37,6 +37,7 @@ void join(int u , int v){
 int main(){
     Scorpion
     cin >> n;
+    components = n;
   /*  for(int i = 1 ; i <= n; i++){
       35-  par[i] = i
       37  sz[i] = 1;
