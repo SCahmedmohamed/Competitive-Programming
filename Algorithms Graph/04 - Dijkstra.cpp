@@ -12,21 +12,29 @@ vector<pair<int,int>> g[N];
 
 void dij(int source){
     priority_queue<pair<int,int>> q;
+    // ff = cost the i calculated , ss = node which i will go to it
     q.push({0,source});
+    // dis = 0 . source (the node which i will start at)
     for(int i = 1; i <= n; i++)
         d[i] = 1e9;
+        // to get the lower 
     d[source] = 0;
+    // as i stand at the source
     while(!q.empty()){
         int cost = q.top().ff;
         int node = q.top().ss;
         q.pop();
-        if(d[node] < cost)
+        if(d[node] < cost) // if dis to the node is less than the cost form cur to the node 
+            // if i get lower path to the same node
             continue;
         for(auto neg : g[node]){
             int ncost = neg.ss + cost;
-            if(ncost < d[neg.ff]){
+            // 
+            if(ncost < d[neg.ff]){ // 
                 d[neg.ff] = ncost;
+                //
                 q.push({d[neg.ff],neg.ff});
+                //  
             }
         }
     }
