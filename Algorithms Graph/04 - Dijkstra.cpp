@@ -21,7 +21,7 @@ void dij(int source){
     d[source] = 0;
     // as i stand at the source
     while(!q.empty()){
-        int cost = q.top().ff;
+        int cost = -q.top().ff;
         int node = q.top().ss;
         q.pop();
         if(d[node] < cost) // if dis to the node is less than the cost form cur to the node 
