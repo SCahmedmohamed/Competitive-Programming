@@ -33,7 +33,7 @@ void dij(int source){
             if(ncost < d[neg.ff]){ // 
                 d[neg.ff] = ncost;
                 //
-                q.push({d[neg.ff],neg.ff});
+                q.push({-d[neg.ff],neg.ff});
                 //  
             }
         }
