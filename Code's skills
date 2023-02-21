@@ -1,5 +1,12 @@
 By Ahmed Mohamed Ibrahim 
 
 1) How To Speed Boost ( Cout - Cin )
+    // write this in first line of main function
+    // dont use endl
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    
+---------------------------------------------------------
+2) How To Specify decimal numbers after the comma
+    //the first line of main function
+    cout << setprecision(2) << fixed;
+
+  
