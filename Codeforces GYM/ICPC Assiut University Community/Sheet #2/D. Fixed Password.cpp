@@ -1,0 +1,25 @@
+// By Ahmed Mohamed Ibrahim .Mar/09/2023 20:00	
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define TC int t;cin>>t;while(t--)
+#define endl '\n'
+#define el '\n'
+#define F first
+#define S second
+#define One_Piece_3mk ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+const int N = 1e4 + 5 , inf = 1e9 + 7 , NEG = -1e9;
+const double Pi =  3.141592653;
+
+int n;
+
+int main (){                                One_Piece_3mk
+    while(cin >> n){
+        if(n == 1999){
+            cout << "Correct" << endl;
+            return 0;
+        }
+        else cout << "Wrong" << endl;
+    }
+R:  return 0;
+}
