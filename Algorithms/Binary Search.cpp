@@ -9,7 +9,7 @@ void solve(){
 
     int left = 0 , right = n - 1;
     while(left <= right){
-        int mid = (left + right) / 2;
+        int mid = left + ( right - left ) / 2 // also : mid = (left + right) / 2;
         if(array[mid] == x){
             cout << "YES";
             return;
